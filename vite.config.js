@@ -15,7 +15,7 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: 'build',
+    outDir: 'dist',   // ⬅️ change from "build" to "dist"
     sourcemap: true,
     rollupOptions: {
       output: {
@@ -31,7 +31,6 @@ export default defineConfig({
     include: ['tesseract.js']
   },
   define: {
-    // For compatibility with some packages
     global: 'globalThis',
   }
 })
